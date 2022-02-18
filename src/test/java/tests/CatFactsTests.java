@@ -52,4 +52,16 @@ public class CatFactsTests extends BaseTest {
         factPage.assertResponseCode();
         factPage.assertCorrectLimitValue(limit);
     }
+
+    /**
+     * T0003_GetListFacts_SetLimitZero: Evaluate GET /facts call to the API with limit = 0
+     *      * Expected Response code = OK
+     */
+    @Test
+    public void T0003_GetListFacts_SetLimitZero() {
+        factPage.setLimit(0);
+        factPage.sendRequestListCatsFacts();
+        factPage.assertResponseCode();
+        //factPage.assertCorrectLimitValue(0);
+    }
 }
