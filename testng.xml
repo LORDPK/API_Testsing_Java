@@ -11,6 +11,7 @@
                     <include name="T0002_GetListFacts_SetLimit">
                         <parameter name="limit" value="5"/>
                     </include>
+                    <include name="T0003_GetListFacts_SetLimitZero"/>
                 </methods>
             </class>
         </classes>
